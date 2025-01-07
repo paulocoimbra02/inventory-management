@@ -1,10 +1,10 @@
-package com.pmc.inventory.management;
+package com.pmc.inventory.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class InventoryServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

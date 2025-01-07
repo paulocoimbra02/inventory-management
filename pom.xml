@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.pmc</groupId>
-	<artifactId>inventory.management</artifactId>
+	<artifactId>service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventory.management</name>
-	<description>Inventory Management API</description>
+	<name>inventory-service</name>
+	<description>Inventory Service</description>
 	<url/>
 	<licenses>
 		<license/>
