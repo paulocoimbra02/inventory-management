@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.newrelic.api.agent.Trace;
 import com.pmc.inventory.service.adapters.in.controllers.dto.ProductRequest;
 import com.pmc.inventory.service.adapters.in.controllers.mapper.ProductContextMapper;
 import com.pmc.inventory.service.application.ports.in.CreateProductInputPort;
@@ -29,6 +30,7 @@ public class ProductController {
     }
 
     @PostMapping
+    @Trace(dispatcher = true, metricName = "POST /api/v1/products")
     public ResponseEntity<Void> createProduct(
             @RequestBody @Valid final ProductRequest body,
             @RequestHeader final String country,
